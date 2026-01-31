@@ -150,60 +150,66 @@ export const testCases = [
     tcId: 'Neg_Fun_0001',
     name: 'Joined words',
     input: 'mata nam dhaenbalanidala athivelaathiyenne. mamagehdarayanavaa',
-    expected: 'මට නම් දැන්බලනිඩල අතිවෙලාතියෙන්නෙ. මමගෙහ්ඩරයනවා'
+    expected: 'මට නම් දැන් බලන් ඉඳලා ඇති වෙලා තියෙන්නේ. මම ගෙදර යනවා.'
   },
   {
     tcId: 'Neg_Fun_0002',
     name: 'Heavy spelling errors',
     input: 'adha man class ekata giyaa. Eka adha naellu.mam me den gdr yannva bus eke negala',
-    expected: 'අද man class එකට ගියා. එක අද නැල්ලු.mam මෙ den ග්ඩ්‍ර යන්න්ව bus eke නෙගල'
+    expected: 'අද මම class එකට ගියා. ඒක අද නෑල්ලු. මම දැන් බස් එකට නැගලා ගෙදර යනවා'
   },
   {
     tcId: 'Neg_Fun_0003',
     name: 'Excessive joined words',
     input: 'matapaanekakonee thavajeam ekakuth denna. Thava keselawariyakuth oona',
-    expected: 'මටපානෙකකොනේ තවජේම් එකකුත් ඩෙන්න. ථව කෙසෙලwඅරියකුත් ඕන'
+    expected: 'මට පාන් එකක් ඕනේ, තව ජෑම් එකකුත් දෙන්න. තව කෙසෙල් ඇවරියකුත් ඕනේ.'
   },
   {
     tcId: 'Neg_Fun_0004',
     name: 'Slang-heavy input',
     input: 'adoo obata heta korean exam eka needha. machan ela wedak karapan hode',
-    expected: 'අඩෝ ඔබට හෙට korean exam එක නේද. මචන් එල wඑඩක් කරපන් හොඩෙ'
+    expected: 'අඩෝ ඔබට හෙට korean exam එක නේද. මචන් එල වැඩක් කරපන් හොදේ'
   },
   {
     tcId: 'Neg_Fun_0005',
     name: 'Joined words (no spaces)',
     input: 'api ada maamalae gedara yanava oyath apith ekka ennaone haridha',
-    expected: 'අපි අඩ මාමලැ ගෙඩර යනව ඔයත් අපිත් එක්ක එන්නඔනෙ හරිද'
+    expected: 'අපි අද මාමලැ ගෙඩර යනව ඔයත් අපිත් එක්ක එන්න ඕනේ හරිද'
   },
   {
     tcId: 'Neg_Fun_0006',
     name: 'Heavy spelling errors',
     input: 'man hithnne eya danne ne hariyata oya kawda kiyla. Ekane eema oyata benne.',
-    expected: 'man හිත්න්නෙ එය ඩන්නෙ නේ හරියට ඔය කwඩ කිය්ල. එකනෙ ඒම ඔයට බෙන්නෙ.'
+    expected: 'මම හිතන්නේ එයා දන්නේ නෑ හරියට ඔයා කවුද කියලා. එකනෙ ඒම ඔයාට බැන්නෙ.'
   },
   {
     tcId: 'Neg_Fun_0007',
     name: 'Extra symbols',
     input: 'marune ee paata oyaata hodhata gaelapenava. kahenda oya aedhuma gaththe. hari!!! lassanai???',
-    expected: 'මරුනෙ ඒ පාට ඔයාට හොදට ගැලපෙනව. කහෙන්ඩ ඔය ඇදුම ගත්තෙ. හරි!!! ලස්සනෛ???'
+    expected: 'මරුනෙ ඒ පාට ඔයාට හොදට ගැලපෙනව. කොහෙන්ද ඔය ඇදුම ගත්තෙ. හරි ලස්සන්යි'
   },
   {
     tcId: 'Neg_Fun_0008',
     name: 'Informal grammar',
     input: 'me man iye gatta aduma . Eke patata nam man asai eth eka hari nadda',
-    expected: 'මෙ man ඉයෙ ගට්ට අඩුම . Eke පටට නම් man අසෛ එත් එක හරි නඩ්ඩ'
+    expected: 'මේ මම ඊයෙ ගත්ත ඇදුම . එකේ පාට මම ආසයි එත්  එක හරි නැද්ද?'
   },
   {
     tcId: 'Neg_Fun_0009',
     name: 'Repeated words',
     input: 'mee api oyaava haemathenama hevva. Oyaa hitiye naethi nisaa api api mee gedhara yanavaa.',
-    expected: 'මේ අපි ඔයාව හැමතෙනම හෙව්ව. ඔයා හිටියෙ නැති නිසා අපි අපි මේ ගෙදර යනවා.'
+    expected: 'මේ අපි ඔයාව හැමතෙනම හෙව්ව. ඔයා හිටියෙ නැති නිසා අපි මේ ගෙදර යනවා.'
   },
   {
     tcId: 'Neg_Fun_0010',
     name: 'Wrong word order',
     input: 'enna oyaata puluvandha heta maava ganna',
-    expected: 'එන්න ඔයාට පුලුවන්ද හෙට මාව ගන්න'
+    expected: 'ඔයාට එන්න පුලුවන්ද හෙට මාව ගන්න'
+  },
+  {
+    tcId: 'Pos_UI_0001',
+    name: 'Sinhala output updates automatically in real-time',
+    input: 'oya monavadha adhinne heta thiyena uthsavayata',
+    expected: 'ඔය මොනවද අදින්නෙ හෙට තියෙන උත්සවයට'
   }
 ];

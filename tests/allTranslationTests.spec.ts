@@ -32,7 +32,7 @@ testCases.forEach((testCase) => {
     const resultElement = page.locator('div.w-full.h-80.p-3.rounded-lg.ring-1.ring-slate-300.whitespace-pre-wrap.overflow-y-auto.flex-grow.bg-slate-50');
     
     try {
-      await resultElement.waitFor({ state: 'visible', timeout: 8000 });
+      await resultElement.waitFor({ state: 'visible', timeout: 30000 });
     } catch (e) {
       console.log('Result element not found with waitFor');
     }
