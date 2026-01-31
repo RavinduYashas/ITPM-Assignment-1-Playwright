@@ -333,22 +333,6 @@ dotenv.config();
 
 ---
 
-## 📞 Support & Contribution
-
-For issues, questions, or improvements:
-1. Check the test report for detailed failure information
-2. Review Playwright documentation
-3. Enable debug mode for detailed logs
-4. Check browser console in headed mode
-
----
-
-## 📄 License
-
-ISC License
-
----
-
 **Last Updated:** January 2026  
 **Project Version:** 1.0.0
 
